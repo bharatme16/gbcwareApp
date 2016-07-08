@@ -1,0 +1,12 @@
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\bin\Debug\businessLibrary.dll
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\bin\Debug\businessLibrary.pdb
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\bin\Debug\businessLibrary.xml
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\bin\Debug\IntegrityDataAccess.dll
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\bin\Debug\IntegrityDataAccess.pdb
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\obj\Debug\businessLibrary.vbprojResolveAssemblyReference.cache
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\obj\Debug\businessLibrary.Resources.resources
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\obj\Debug\businessLibrary.vbproj.GenerateResource.Cache
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\obj\Debug\businessLibrary.dll
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\obj\Debug\businessLibrary.xml
+C:\Users\bharatme16\Desktop\gbcware-app\businessLibrary\businessLibrary\obj\Debug\businessLibrary.pdb

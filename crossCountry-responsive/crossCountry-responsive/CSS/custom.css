@@ -1,0 +1,74 @@
+﻿.center {
+    margin: auto;
+   max-width: 500px;
+  
+    padding: 10px;
+}
+
+.dashboard {
+     border:1px solid #ccc;
+      margin: auto; 
+   
+}
+.dashboard .btn {
+   
+ 
+  text-align:left;
+  padding:10px;
+ margin-bottom:10px; 
+ background:#fff;
+ color:#000;
+ font-size:15px;
+ border:2px solid #ccc;
+ border-radius:20px;
+}
+
+.dashboard .btn:hover {
+   
+  
+  text-align:left;
+  padding:10px;
+ margin-bottom:10px; 
+ background:#fff;
+ color:#000;
+ font-size:15px;
+ border:2px solid blue;
+}
+
+.dashboard .row {
+    text-align:left;
+
+ padding:5px;
+}
+
+.dashboard .badge {
+background:#fff;
+border:2px solid #ccc;
+color:#000;
+
+}
+
+  #logo-main {
+    display: block;
+   
+   
+  }
+
+  .ListDiv 
+{
+    width:100%;
+   max-height: 500px;
+    float: left;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+
+  .table-borderless tbody tr td, 
+  .table-borderless tbody tr th, 
+  .table-borderless thead tr th {
+    border: none;
+}
+  .table-borderless td{
+      border: none;
+  }
