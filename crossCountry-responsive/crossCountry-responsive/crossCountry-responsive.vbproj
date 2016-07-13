@@ -234,9 +234,11 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\adjusterWorkload.aspx" />
     <Content Include="Admin\adminhome.aspx" />
+    <Content Include="Admin\assignClaim.aspx" />
     <Content Include="Admin\claimDetail.aspx" />
     <Content Include="Admin\claimMap.aspx" />
     <Content Include="Admin\claimReview.aspx" />
+    <Content Include="Admin\crossCountryFiles.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -246,6 +248,10 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CSS\custom.css" />
+    <Content Include="Resources\checked.png" />
+    <Content Include="Resources\unchecked.png" />
+    <Content Include="Scripts\jquery-1.3.2.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -265,6 +271,7 @@
     <Content Include="login.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\assign-claim-map-scripts.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -429,6 +436,13 @@
       <DependentUpon>adminhome.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Admin\assignClaim.aspx.designer.vb">
+      <DependentUpon>assignClaim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\assignClaim.aspx.vb">
+      <DependentUpon>assignClaim.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Admin\claimDetail.aspx.designer.vb">
       <DependentUpon>claimDetail.aspx</DependentUpon>
     </Compile>
@@ -448,6 +462,13 @@
     </Compile>
     <Compile Include="Admin\claimReview.aspx.vb">
       <DependentUpon>claimReview.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\crossCountryFiles.aspx.designer.vb">
+      <DependentUpon>crossCountryFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\crossCountryFiles.aspx.vb">
+      <DependentUpon>crossCountryFiles.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
@@ -551,8 +572,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="custom-scripts\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\businessLibrary\businessLibrary\businessLibrary.vbproj">
+      <Project>{4cb8f3b5-2c27-4ea5-9703-a9ceae4036e9}</Project>
+      <Name>businessLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\data-layer\datalayer\DataAccess.csproj">
       <Project>{3e6f157f-17a3-4d94-b285-9bad1a18986f}</Project>
       <Name>DataAccess</Name>

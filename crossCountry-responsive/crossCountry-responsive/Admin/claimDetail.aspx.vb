@@ -1,6 +1,12 @@
-﻿Public Class claimDetail
+﻿Imports System.IO
+Imports System.Xml
+Imports businessLibrary
+
+Public Class claimDetail
     Inherits System.Web.UI.Page
-    Dim objAccess As New CrossCountryDataAccess.dataAccess
+    Dim objAccess As New crossCountryDataAccess.dataAccess
+    Dim objPdfMerge As New pdfManager
+    Dim dt As New DataTable()
 
 #Region "Properties"
 
@@ -22,11 +28,23 @@
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not IsPostBack Then
+
+            If Page.ClientScript.IsStartupScriptRegistered(Me.GetType(), "initmap") = False Then
+                Page.ClientScript.RegisterStartupScript(Me.GetType(), "initmap", "MYMAP.init(30.709962, -88.044548, 12);", True)
+            End If
             getClaimDetail(claimID)
             loadNotes(claimID)
             bindContactsforNotes(claimID)
+            loadAssociatedFiles(claimID)
+            'calling initmap javascript method
+            Dim str As String = FilterMarker()
+            runScript(str)
         End If
+
     End Sub
+
+
+
 
 
     Protected Sub getClaimDetail(ByVal claimId As Integer)
@@ -276,4 +294,315 @@
         End If
 
     End Sub
+
+
+
+    'load associated files
+    Sub loadAssociatedFiles(ByVal claimId As Integer)
+        Dim dtAssociatedFiles As New DataTable
+
+        Try
+            dtAssociatedFiles = objAccess.getFilepathByClaimId(claimId, Session("UserRole"))
+            If dtAssociatedFiles.Rows.Count >= 1 Then
+                GVAssociatedFiles.DataSource = dtAssociatedFiles
+                GVAssociatedFiles.DataBind()
+                For Each rows As GridViewRow In GVAssociatedFiles.Rows
+                    Dim btn As Button = rows.FindControl("btnStatus")
+                    If rows.Cells.Item(11).Text = "Read" Then
+                        btn.Text = "Unread"
+                    Else
+                        btn.Text = "Read"
+                    End If
+                Next
+            Else
+                GVAssociatedFiles.DataSource = Nothing
+                GVAssociatedFiles.DataBind()
+            End If
+        Catch ex As Exception
+        End Try
+
+    End Sub
+
+
+
+    'Merge Pdf File
+    Protected Sub btnMergeFile_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        Dim isValidator As Boolean = False 'Boolean Value to check for any message.
+        Dim messageList As New ArrayList    'List to generate error alert.
+        Dim fileNotSelected As Boolean = False 'Boolean to check if at least one file is selected
+        lblMergeError.Text = ""
+
+        'Check if atleast one file is selected
+        If gvMergeFile.Rows.Count >= 2 Then
+
+        Else
+            isValidator = True
+            messageList.Add("Select at least two files.")
+        End If
+
+
+        ''File is not selected
+        'If fileNotSelected = True Then
+        '    isValidator = True
+        '    messageList.Add("Select at least one File.")
+        'End If
+
+        'File name is not provided
+        If txtMergeFileName.Text = String.Empty Then
+            isValidator = True
+            messageList.Add("File Name is required.")
+        End If
+
+        'File Description is not provided
+        If txtMergeFileDescription.Text = String.Empty Then
+            isValidator = True
+            messageList.Add("File Description is not provided.")
+        End If
+
+        If isValidator = True Then
+            'ScriptManager.RegisterStartupScript(Me.pnlUploadFiles, Me.[GetType](), "showalert", "Error", True)
+            'join all the alert message seperated by ";"
+            Dim s = "Check these Error(s): " + String.Join(";  ", messageList.Cast(Of String)().ToArray())
+
+            'Show Alert
+            '  integrityAccess.Alert.Show(s)
+            'Do nothing
+        Else
+            'Collection of path of the files to be merged.
+            Dim arrayFiles As New ArrayList
+
+            If gvMergeFile.Rows.Count >= 1 Then
+                'Add files path to the list
+                For i As Integer = 0 To gvMergeFile.Rows.Count - 1
+                    'Dim chkBoxCell As CheckBox = GVAssociatedFiles.Rows(i).FindControl("CheckBox1")
+                    ' If chkBoxCell.Checked = True Then
+                    If File.Exists(Server.MapPath(gvMergeFile.Rows(i).Cells(2).Text.ToString)) Then
+                        arrayFiles.Add(Server.MapPath(gvMergeFile.Rows(i).Cells(2).Text.ToString))
+                    End If
+                    'End If
+                Next
+            End If
+
+            'Folder where merged files will be saved
+            Dim pathToFolder As String = "~/Files/" + lblClaimNumber.Text + "/"
+
+            'Actual path of the folder
+            Dim folderPath As String = Server.MapPath(pathToFolder) 'Actual Mapping to Folder
+
+            'Check if the directory exists
+            If Not Directory.Exists(folderPath) = True Then
+                ' Ensure the folder exists 
+                Directory.CreateDirectory(folderPath)
+            Else
+                'Do nothing.
+            End If
+
+            'Get the file name for the merge file
+            Dim filename As String = txtMergeFileName.Text
+            ' filename = Replace(filename, "'", "").Replace("#", "").Replace("&", "")
+
+            'This is path for the final output
+            Dim filePath As String = folderPath + filename + ".pdf" 'Generate Pdf 
+
+            'If same name is chosen for the file
+            If File.Exists(filePath) = True Then
+                lblMergeError.Text = "-File already exists. Rename the file and continue.-"
+            Else
+                'Call merge function 
+                objPdfMerge.MergeFiles(filePath, arrayFiles)
+                '   MsgBox(filesize)
+                Try
+                    'Add path of the final output to the database
+                    'Note: the full path is not saved to the database
+                    objAccess.insertFilepath(lblClaimNumber.Text, lblClaimNumber.Text + "_MergedFile", Path.Combine(pathToFolder, filename + ".pdf".ToString),
+                                                              txtMergeFileDescription.Text, filename + ".pdf".ToString, "application/pdf")
+
+
+                    'get the claim Id from the Query String
+                    '  Dim id As String = DecryptQueryString(Request.QueryString("phyid"))
+
+                    'Reload the files
+                    loadAssociatedFiles(claimID)
+                    '    lblFileUpload.Text = "File is sucessfully uploaded."
+
+                    'Empty any text 
+                    txtMergeFileName.Text = String.Empty
+                    txtMergeFileDescription.Text = String.Empty
+                    gvMergeFile.DataSource = Nothing
+                    gvMergeFile.DataBind()
+                    '     SetInitialRow()
+
+                Catch ex As Exception
+                End Try
+            End If
+        End If
+    End Sub
+
+    'Set the initial Row
+    Private Sub SetInitialRow()
+        '' Split string based on spaces
+        'Dim words As String() = value.Split("-"c)
+        'Dim carrierName As String = words(0)
+        'Dim invoiceType As String = words(1)
+        'carrierName = carrierName.Trim()
+        'invoiceType = invoiceType.Trim()
+        'Dim invoiceTypeTable As New DataTable
+
+        'Get Carrier Name
+        'lblCarrierName.Text = carrierName
+
+        'Assign Expenses
+        Dim dr As DataRow = Nothing
+        dt.Columns.Add(New DataColumn("fileDescription", GetType(String)))
+        dt.Columns.Add(New DataColumn("fileName", GetType(String)))
+        dt.Columns.Add(New DataColumn("filePath", GetType(String)))
+
+        dr = dt.NewRow
+        'invoiceTypeTable = objacess.getInvoiceTypeForClaim(carrierName, invoiceType)
+        'If invoiceTypeTable.Rows.Count >= 1 Then
+        '    dr("item") = invoiceTypeTable.Rows(0).Item("Company").ToString
+        '    dr("Description") = invoiceTypeTable.Rows(0).Item("Description").ToString
+        '    dr("Price") = invoiceTypeTable.Rows(0).Item("Fee").ToString
+        '    dt.Rows.Add(dr)
+
+        'Store the DataTable in ViewState
+        ViewState("CurrentTable") = dt
+
+        gvMergeFile.DataSource = dt
+        gvMergeFile.DataBind()
+        'End If
+        'getCarrierDetail(carrierName)
+        'showCarrier(carrierName)
+
+    End Sub
+
+    'Adding new row 
+    Private Sub AddNewRowToGrid(ByVal FileDescription As String, ByVal fileName As String, ByVal filepath As String)
+        Dim rowIndex As Integer = 0
+        Dim duplicateFound As Boolean = False
+
+        If ViewState("CurrentTable") IsNot Nothing Then
+            Dim dtCurrentTable As DataTable = DirectCast(ViewState("CurrentTable"), DataTable)
+            Dim drCurrentRow As DataRow = Nothing
+
+            'If row exist count the row
+            If dtCurrentTable.Rows.Count > 0 Then
+                rowIndex = dtCurrentTable.Rows.Count
+            Else
+                rowIndex = 0
+            End If
+            If gvMergeFile.Rows.Count >= 1 Then
+                For Each rows As GridViewRow In gvMergeFile.Rows
+                    If fileName = rows.Cells.Item(1).Text Or filepath = rows.Cells.Item(2).Text Then
+                        duplicateFound = True
+                        Exit For
+                    Else
+                        duplicateFound = False
+                    End If
+                Next
+            End If
+            If duplicateFound = True Then
+            Else
+                drCurrentRow = dtCurrentTable.NewRow()
+                drCurrentRow("fileDescription") = FileDescription
+                drCurrentRow("fileName") = fileName
+                drCurrentRow("filePath") = filepath
+
+                dtCurrentTable.Rows.Add(drCurrentRow)
+                ViewState("CurrentTable") = dtCurrentTable
+
+                gvMergeFile.DataSource = dtCurrentTable
+                gvMergeFile.DataBind()
+            End If
+
+        Else
+            Response.Write("ViewState is null")
+        End If
+
+        'Set Previous Data on Postbacks
+        '  SetPreviousData()
+    End Sub
+
+
+
+
+
+    Protected Sub runScript(ByVal stringMap As String)
+        Dim result = stringMap
+        ScriptManager.RegisterStartupScript(Me, Me.GetType(), "clearOverlays",
+                                                "MYMAP.clearOverlays();", True)
+        If result = "" Then
+            '  lblMapInfo.Text = "-No Claims Found-"
+            Page.ClientScript.RegisterStartupScript(Me.GetType(), "initmap", "MYMAP.init(30.709962, -88.044548, 12);", True)
+        Else
+            '  lblMapInfo.Text = ""
+            'calling javascript function on partial postback to filter markers from the result
+            ScriptManager.RegisterStartupScript(Me, Me.GetType(), "filterplacemark",
+                                                "var filterresult='" + Server.HtmlDecode(result) + "';MYMAP.placemarkAjax(filterresult);", True)
+        End If
+    End Sub
+
+
+
+
+    Protected Function FilterMarker() As String
+        Dim dt As New DataTable
+
+        dt = objAccess.getClaimByClaimId(claimID)
+
+        Dim result As String = ""
+        If dt.Rows.Count >= 1 Then
+            Using str As New StringWriter()
+                Using w As New XmlTextWriter(str)
+                    w.WriteStartDocument()
+                    w.WriteComment("xml for marker")
+                    w.WriteStartElement("Markers")
+
+                    'looping over each rows in the datatable.
+                    For Each itemRow In dt.Rows
+                        Dim claimNo = itemRow("Claim_number").ToString
+                        Dim insuredName = itemRow("insured_firstname").ToString + itemRow("insured_lastname").ToString
+                        Dim Address = "NA"
+                        Dim adjuster = "NA"
+                        Dim Title = itemRow("Claim_number").ToString
+                        Dim Lat_ = itemRow("latitude")
+                        Dim Long_ = itemRow("longitude")
+                        w.WriteStartElement("marker")
+                        If True Then
+
+                            w.WriteElementString("claimNo", claimNo)
+                            w.WriteElementString("insuredName", insuredName)
+                            w.WriteElementString("adjuster", adjuster)
+                            w.WriteElementString("title", Title)
+                            w.WriteElementString("address", Address)
+                            w.WriteElementString("lat", Lat_)
+                            w.WriteElementString("lng", Long_)
+
+                        End If
+                        w.WriteEndElement() 'End of marker element
+
+
+                    Next
+
+                    'End of xml
+                    w.WriteEndElement() 'End of Markers element
+                    w.WriteEndDocument()
+
+                    'Results as String
+                    result = str.ToString()
+
+
+                End Using
+            End Using
+
+
+        Else
+            'do Nothing
+        End If
+
+
+        Return result
+
+
+    End Function
 End Class

@@ -699,9 +699,306 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.assignClaim._UpdatePanel3">
+<summary>
+UpdatePanel3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._ddlChooseClaim">
+<summary>
+ddlChooseClaim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._ddlState">
+<summary>
+ddlState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._btnFilterByClaimState">
+<summary>
+btnFilterByClaimState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._UpdatePanel4">
+<summary>
+UpdatePanel4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._ddlChooseAdjuster">
+<summary>
+ddlChooseAdjuster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._btnFilterByAdjuster">
+<summary>
+btnFilterByAdjuster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._UpdatePanel2">
+<summary>
+UpdatePanel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._ddlChooseClaimRep">
+<summary>
+ddlChooseClaimRep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._btnFilterByClaimRep">
+<summary>
+btnFilterByClaimRep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._UpdatePanel5">
+<summary>
+UpdatePanel5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._ddlChooseCarrier">
+<summary>
+ddlChooseCarrier control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._btnFilterByCarrier">
+<summary>
+btnFilterByCarrier control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._UpdatePanel6">
+<summary>
+UpdatePanel6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._ddlChooseLossType">
+<summary>
+ddlChooseLossType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._btnFilterByLossType">
+<summary>
+btnFilterByLossType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._UpdatePanel7">
+<summary>
+UpdatePanel7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._txtSearchClaims">
+<summary>
+txtSearchClaims control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._btnSearchClaims">
+<summary>
+btnSearchClaims control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._updtFilter">
+<summary>
+updtFilter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._lblMapHeading">
+<summary>
+lblMapHeading control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._lblMapInfo">
+<summary>
+lblMapInfo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._lblClaimCount">
+<summary>
+lblClaimCount control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._gdPanel">
+<summary>
+gdPanel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._gdClaimCount">
+<summary>
+gdClaimCount control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._gdClaimCount_AnimationExtender">
+<summary>
+gdClaimCount_AnimationExtender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._ddlAdjuster">
+<summary>
+ddlAdjuster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._btnAssign">
+<summary>
+btnAssign control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._lblSelectAdjusterInfo">
+<summary>
+lblSelectAdjusterInfo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._lblSelectAdjuster">
+<summary>
+lblSelectAdjuster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.assignClaim._UpdateProgress">
+<summary>
+UpdateProgress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.claimDetail._lblClaimNumber">
 <summary>
 lblClaimNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -807,15 +1104,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:crossCountry_responsive.claimDetail._UpdatePanel1">
-<summary>
-UpdatePanel1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:crossCountry_responsive.claimDetail._Panel2">
 <summary>
 Panel2 control.
@@ -882,6 +1170,123 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:crossCountry_responsive.claimDetail._lnkRepButton">
 <summary>
 lnkRepButton control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._UpdatePanel2">
+<summary>
+UpdatePanel2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._GVAssociatedFiles">
+<summary>
+GVAssociatedFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._gvMergeFile">
+<summary>
+gvMergeFile control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lblMergeError">
+<summary>
+lblMergeError control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._txtMergeFileName">
+<summary>
+txtMergeFileName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._txtMergeFileDescription">
+<summary>
+txtMergeFileDescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._btnMergeFile">
+<summary>
+btnMergeFile control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._btnFileUpload">
+<summary>
+btnFileUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._ascFileUpload">
+<summary>
+ascFileUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._cmbFileType">
+<summary>
+cmbFileType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._txtDescription">
+<summary>
+txtDescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._btnUpload">
+<summary>
+btnUpload control.
 </summary>
 <remarks>
 Auto-generated field.

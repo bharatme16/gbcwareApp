@@ -72,3 +72,9 @@ color:#000;
   .table-borderless td{
       border: none;
   }
+
+ #map_canvas {
+    min-width: 368px;
+    height:500px;
+     
+}

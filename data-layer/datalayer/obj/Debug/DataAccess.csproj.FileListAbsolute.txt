@@ -2,3 +2,7 @@ C:\Users\bharatme16\Desktop\gbcware-app\data-layer\datalayer\bin\Debug\Integrity
 C:\Users\bharatme16\Desktop\gbcware-app\data-layer\datalayer\bin\Debug\IntegrityDataAccess.pdb
 C:\Users\bharatme16\Desktop\gbcware-app\data-layer\datalayer\obj\Debug\IntegrityDataAccess.dll
 C:\Users\bharatme16\Desktop\gbcware-app\data-layer\datalayer\obj\Debug\IntegrityDataAccess.pdb
+C:\gbcware\data-layer\datalayer\bin\Debug\IntegrityDataAccess.dll
+C:\gbcware\data-layer\datalayer\bin\Debug\IntegrityDataAccess.pdb
+C:\gbcware\data-layer\datalayer\obj\Debug\IntegrityDataAccess.dll
+C:\gbcware\data-layer\datalayer\obj\Debug\IntegrityDataAccess.pdb
