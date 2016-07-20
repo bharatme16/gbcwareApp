@@ -987,6 +987,33 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.billingList._gdFiles">
+<summary>
+gdFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimContactList._ddlChooseCarrier">
+<summary>
+ddlChooseCarrier control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimContactList._btnSelect">
+<summary>
+btnSelect control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.claimContactList._gdFiles">
 <summary>
 gdFiles control.

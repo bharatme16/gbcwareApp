@@ -15,7 +15,7 @@
             <asp:BoundField DataField="Zip" HeaderText="Zip" ReadOnly="True" SortExpression="Zip" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg"/> 
             <asp:BoundField DataField="Phone" HeaderText="Phone" ReadOnly="True" SortExpression="Phone" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs"/> 
             <asp:BoundField DataField="Group/Role" HeaderText="Group/Role" ReadOnly="True" SortExpression="Group/Role" HeaderStyle-CssClass="visible-lg visible-md visible-sm" ItemStyle-CssClass="visible-lg visible-md visible-sm"/> 
-            <asp:BoundField DataField="Password" HeaderText="Password" ReadOnly="True" SortExpression="Password" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg visible-md"/> 
+            <asp:BoundField DataField="Password" HeaderText="Password" ReadOnly="True" SortExpression="Password" HeaderStyle-CssClass="visible-lg visible-md" ItemStyle-CssClass="visible-lg visible-md"/> 
             <asp:BoundField DataField="Status" HeaderText="Status" ReadOnly="True" SortExpression="Status" HeaderStyle-CssClass="visible-lg visible-md visible-sm" ItemStyle-CssClass="visible-lg visible-md visible-sm" /> 
             <asp:BoundField DataField="Adjuster Status" HeaderText="Adjuster Status" ReadOnly="True" SortExpression="Adjuster Status" HeaderStyle-CssClass="visible-lg visible-md visible-sm" ItemStyle-CssClass="visible-lg visible-md visible-sm"/> 
                    </Columns>

@@ -8,7 +8,7 @@
         AutoGenerateColumns="false" AllowSorting="true" OnSorting="sortRecords" EmptyDataText="There are no companies to display"> 
         <Columns>
              <asp:BoundField DataField="Company ID" HeaderText="companyId" ReadOnly="True" SortExpression="Company ID" HeaderStyle-CssClass="hidden" ItemStyle-CssClass="hidden" /> 
-            <asp:hyperlinkField DataTextField="Company" HeaderText="Name" DataNavigateUrlFields="Company ID" DataNavigateUrlFormatString="/Admin/modifyCompany.aspx?userId={0}"  SortExpression="Name" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs"/> 
+            <asp:hyperlinkField DataTextField="Company" HeaderText="Name" DataNavigateUrlFields="Company ID" DataNavigateUrlFormatString="/Admin/modifyCompany.aspx?companyId={0}"  SortExpression="Name" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs"/> 
                <asp:BoundField DataField="Street" HeaderText="Street" ReadOnly="True" SortExpression="Street" HeaderStyle-CssClass="visible-lg visible-md" ItemStyle-CssClass="visible-lg visible-md" />            
              <asp:BoundField DataField="City" HeaderText="City" ReadOnly="True" SortExpression="City" HeaderStyle-CssClass="visible-lg visible-md" ItemStyle-CssClass="visible-lg visible-md"/> 
             <asp:BoundField DataField="State" HeaderText="State" ReadOnly="True" SortExpression="State" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs"/> 
