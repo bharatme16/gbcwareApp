@@ -25,3 +25,16 @@ C:\gbcware\businessLibrary\businessLibrary\obj\Debug\businessLibrary.dll
 C:\gbcware\businessLibrary\businessLibrary\obj\Debug\businessLibrary.xml
 C:\gbcware\businessLibrary\businessLibrary\obj\Debug\businessLibrary.pdb
 C:\gbcware\businessLibrary\businessLibrary\obj\Debug\businessLibrary.vbprojResolveAssemblyReference.cache
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\bin\Debug\businessLibrary.dll
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\bin\Debug\businessLibrary.pdb
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\bin\Debug\businessLibrary.xml
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\bin\Debug\IntegrityDataAccess.dll
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\bin\Debug\IntegrityDataAccess.pdb
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\bin\Debug\Artem.Google.pdb
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\obj\Debug\businessLibrary.vbprojResolveAssemblyReference.cache
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\obj\Debug\businessLibrary.Resources.resources
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\obj\Debug\businessLibrary.vbproj.GenerateResource.Cache
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\obj\Debug\businessLibrary.dll
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\obj\Debug\businessLibrary.xml
+C:\GBCware\gbcwareApp\businessLibrary\businessLibrary\obj\Debug\businessLibrary.pdb

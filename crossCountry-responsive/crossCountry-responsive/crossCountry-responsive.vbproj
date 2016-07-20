@@ -235,10 +235,13 @@
     <Content Include="Admin\adjusterWorkload.aspx" />
     <Content Include="Admin\adminhome.aspx" />
     <Content Include="Admin\assignClaim.aspx" />
+    <Content Include="Admin\claimContactList.aspx" />
     <Content Include="Admin\claimDetail.aspx" />
     <Content Include="Admin\claimMap.aspx" />
     <Content Include="Admin\claimReview.aspx" />
+    <Content Include="Admin\companyList.aspx" />
     <Content Include="Admin\crossCountryFiles.aspx" />
+    <Content Include="Admin\userList.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -444,6 +447,13 @@
       <DependentUpon>assignClaim.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Admin\claimContactList.aspx.designer.vb">
+      <DependentUpon>claimContactList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\claimContactList.aspx.vb">
+      <DependentUpon>claimContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Admin\claimDetail.aspx.designer.vb">
       <DependentUpon>claimDetail.aspx</DependentUpon>
     </Compile>
@@ -465,12 +475,26 @@
       <DependentUpon>claimReview.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Admin\companyList.aspx.designer.vb">
+      <DependentUpon>companyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\companyList.aspx.vb">
+      <DependentUpon>companyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Admin\crossCountryFiles.aspx.designer.vb">
       <DependentUpon>crossCountryFiles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\crossCountryFiles.aspx.vb">
       <DependentUpon>crossCountryFiles.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\userList.aspx.designer.vb">
+      <DependentUpon>userList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\userList.aspx.vb">
+      <DependentUpon>userList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\IdentityConfig.vb" />

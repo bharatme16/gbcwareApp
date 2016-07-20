@@ -987,6 +987,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.claimContactList._gdFiles">
+<summary>
+gdFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.claimDetail._lblClaimNumber">
 <summary>
 lblClaimNumber control.
@@ -1393,6 +1402,24 @@ To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:crossCountry_responsive.claimReview._gdFiles">
+<summary>
+gdFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.companyList._gdFiles">
+<summary>
+gdFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.userList._gdFiles">
 <summary>
 gdFiles control.
 </summary>
