@@ -59,11 +59,11 @@
              <asp:BoundField DataField="Claim ID" HeaderText="Claim ID" ReadOnly="True" SortExpression="Claim ID" HeaderStyle-CssClass="hidden" ItemStyle-CssClass="hidden" /> 
                <asp:hyperlinkField DataTextField="Claim #" HeaderText="Claim #" DataNavigateUrlFields="Claim ID" DataNavigateUrlFormatString="/Admin/claimDetail.aspx?claimID={0}"  SortExpression="FILE" /> 
           
-            <asp:BoundField DataField="Insured Name" HeaderText="Insured Name" ReadOnly="True" SortExpression="Insured Name" /> 
+            <asp:BoundField DataField="Insured Name" HeaderText="Insured" ReadOnly="True" SortExpression="Insured Name" /> 
              <asp:BoundField DataField="Carrier" HeaderText="Carrier" ReadOnly="True" SortExpression="Carrier" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg"  /> 
             <asp:BoundField DataField="Claim Contact" HeaderText="Claim Contact" ReadOnly="True" SortExpression="Claim Contact" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg" /> 
             <asp:BoundField DataField="Loss Type" HeaderText="Loss Type" ReadOnly="True" SortExpression="Loss Type" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg"  /> 
-            <asp:BoundField DataField="Adjuster" HeaderText="Adjuster" ReadOnly="True" SortExpression="Adjuster" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg" /> 
+            <asp:BoundField DataField="Adjuster" HeaderText="Adjuster" ReadOnly="True" SortExpression="Adjuster" HeaderStyle-CssClass="visible-md visible-lg" ItemStyle-CssClass="visible-md visible-lg" /> 
             <asp:BoundField DataField="Received Date" HeaderText="Received Date" ReadOnly="True" SortExpression="Received Date"  /> 
             <asp:BoundField DataField="Status" HeaderText="Status" ReadOnly="True" SortExpression="Status" HeaderStyle-CssClass="visible-lg" ItemStyle-CssClass="visible-lg"  /> 
 

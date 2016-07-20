@@ -1,9 +1,11 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="claimReview.aspx.vb" Inherits="crossCountry_responsive.claimReview" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="panel panel-default">
-
+        <div class="panel-heading">
+            <h4>Claims To Review</h4>
+        </div>
         <div class="panel-body">
-            <asp:GridView ID="gdFiles" runat="server" Width="100%" CssClass="table table-hover table-striped" GridLines="None"  
+            <asp:GridView ID="gdFiles" runat="server" Width="100%" CssClass="table table-hover  table-striped" GridLines="None"  
                 AllowPaging="true" pagesize="50" DataKeyNames="Claim ID" ShowHeaderWhenEmpty="true"  
         AutoGenerateColumns="false" AllowSorting="true" OnSorting="sortRecords" EmptyDataText="There are no claims to display"> 
         <Columns>
