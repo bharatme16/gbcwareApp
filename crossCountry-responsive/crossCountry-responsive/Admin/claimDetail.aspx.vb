@@ -36,9 +36,13 @@ Public Class claimDetail
             loadNotes(claimID)
             bindContactsforNotes(claimID)
             loadAssociatedFiles(claimID)
+            loadFileTypes()
+
+            SetInitialRow()
             'calling initmap javascript method
             Dim str As String = FilterMarker()
             runScript(str)
+
         End If
 
     End Sub
@@ -296,6 +300,58 @@ Public Class claimDetail
     End Sub
 
 
+    'add file button clicked
+    Protected Sub btnAddFile_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+
+        Dim isValidateError As Boolean
+
+        If GVAssociatedFiles.Rows.Count >= 1 Then
+            'Attach files
+            For i As Integer = 0 To GVAssociatedFiles.Rows.Count - 1
+                Dim chkBoxCell As CheckBox = GVAssociatedFiles.Rows(i).FindControl("CheckBox1")
+                If chkBoxCell.Checked = True Then
+                    If File.Exists(Server.MapPath(GVAssociatedFiles.Rows(i).Cells(3).Text.ToString)) Then
+                        If checkFileExtension(Server.MapPath(GVAssociatedFiles.Rows(i).Cells(3).Text.ToString)) = False Then
+                            isValidateError = True
+                            Exit For
+                        End If
+                        ' Mail.Attachments.Add(New Net.Mail.Attachment(Server.MapPath(GVAssociatedFiles.Rows(i).Cells(5).Text.ToString)))
+                    End If
+                End If
+            Next
+        End If
+        If isValidateError = True Then
+            Dim s As String = "Invalid file type is selected. Select "".pdf"" files only."
+            '  integrityAccess.Alert.Show(s)
+        Else
+            If GVAssociatedFiles.Rows.Count >= 1 Then
+
+                'Attach files
+                For i As Integer = 0 To GVAssociatedFiles.Rows.Count - 1
+                    Dim chkBoxCell As CheckBox = GVAssociatedFiles.Rows(i).FindControl("CheckBox1")
+                    If chkBoxCell.Checked = True Then
+
+                        If File.Exists(Server.MapPath(GVAssociatedFiles.Rows(i).Cells(3).Text.ToString)) Then
+                            AddNewRowToGrid(GVAssociatedFiles.Rows(i).Cells(5).Text.ToString,
+                                            GVAssociatedFiles.Rows(i).Cells(6).Text.ToString,
+                                            GVAssociatedFiles.Rows(i).Cells(3).Text.ToString)
+                            ' Mail.Attachments.Add(New Net.Mail.Attachment(Server.MapPath(GVAssociatedFiles.Rows(i).Cells(5).Text.ToString)))
+                        End If
+                      
+                    End If
+                Next
+
+                For i As Integer = 0 To GVAssociatedFiles.Rows.Count - 1
+                    Dim chkBoxCell As CheckBox = GVAssociatedFiles.Rows(i).FindControl("CheckBox1")
+                    chkBoxCell.Checked = False
+                Next
+            End If
+        End If
+
+    End Sub
+
+
+
 
     'load associated files
     Sub loadAssociatedFiles(ByVal claimId As Integer)
@@ -376,6 +432,7 @@ Public Class claimDetail
                 For i As Integer = 0 To gvMergeFile.Rows.Count - 1
                     'Dim chkBoxCell As CheckBox = GVAssociatedFiles.Rows(i).FindControl("CheckBox1")
                     ' If chkBoxCell.Checked = True Then
+                    MsgBox(gvMergeFile.Rows(i).Cells(2).Text.ToString)
                     If File.Exists(Server.MapPath(gvMergeFile.Rows(i).Cells(2).Text.ToString)) Then
                         arrayFiles.Add(Server.MapPath(gvMergeFile.Rows(i).Cells(2).Text.ToString))
                     End If
@@ -543,7 +600,128 @@ Public Class claimDetail
     End Sub
 
 
+    'Get list of file types
+    Protected Sub loadFileTypes()
+        Dim tableFileTypes As New DataTable
+        tableFileTypes = objAccess.getFileType()
+        If tableFileTypes.Rows.Count >= 1 Then
+            With cmbFileType
+                .DataSource = tableFileTypes
+                .DataTextField = "File Type"
+                .DataValueField = "File Type"
+                .DataBind()
+            End With
+        End If
+    End Sub
 
+
+    Protected Sub upload_Click(sender As Object, e As System.EventArgs)
+
+        Dim isValidator As Boolean = False
+        hidTAB.Value = "#Files"
+
+        For Each xfiles As HttpPostedFile In ascFileUpload.PostedFiles
+
+            Dim messageList As New ArrayList
+            Dim fileName1 As String = Path.GetFileName(xfiles.FileName)
+            Dim folderPath1 As String = "~/Files/" + lblClaimNumber.Text + "/"
+
+            Dim folder1 As String = Server.MapPath(folderPath1)
+
+            If ascFileUpload.HasFile = False Then
+                isValidator = True
+                messageList.Add("File is not Selected.")
+            End If
+
+            If txtDescription.Text = String.Empty Then
+                isValidator = True
+                messageList.Add("File description is not provided.")
+            End If
+
+            If CheckFileExists(Path.Combine(folder1, fileName1)) = True Then
+                isValidator = True
+                messageList.Add("The file with the name """ + fileName1 + """ already exists. Rename the file and try again.")
+            End If
+
+
+            If isValidator = True Then
+                'ScriptManager.RegisterStartupScript(Me.pnlUploadFiles, Me.[GetType](), "showalert", "Error", True)
+                Dim s = "Check these Error(s): " + String.Join("; ", messageList.Cast(Of String)().ToArray())
+                '  integrityAccess.Alert.Show(s)
+                'Do nothing
+            Else
+                'Dim fileSize As Integer
+                'fileSize = ascFileUpload.PostedFile.ContentLength
+
+                '  lblFileContentSize.Text = fileSize.ToString
+                Dim fileName As String = Path.GetFileName(xfiles.FileName)
+                fileName = Replace(fileName, "'", "").Replace("#", "").Replace("&", "")
+
+
+                Dim folderPath As String = "~/Files/" + lblClaimNumber.Text + "/"
+
+                Dim folder As String = Server.MapPath(folderPath)
+
+                If Not Directory.Exists(folder) = True Then
+                    ' Ensure the folder exists 
+                    Directory.CreateDirectory(folder)
+                Else
+                    'Do nothing.
+                End If
+
+                Try
+                    Try
+                        objAccess.insertFilepath(lblClaimNumber.Text, cmbFileType.Text, Path.Combine(folderPath, fileName),
+                                                                txtDescription.Text, fileName, xfiles.ContentType)
+                    Catch ex As Exception
+                        '   MsgBox(ex.ToString)
+                    End Try
+
+
+                    ' Save the file to the folder 
+                    xfiles.SaveAs(Path.Combine(folder, fileName))
+
+
+                    txtDescription.Text = String.Empty
+
+                    '  Dim id As String = DecryptQueryString(Request.QueryString("phyid"))
+
+                    'lblFilesize.Text = "File Size: " + ascFileUpload.PostedFile.ContentLength.ToString + " Byte"
+                    'lblFileType.Text = "File Type: " + ascFileUpload.PostedFile.ContentType.ToString
+                    'lblFileUpload.Text = "File is sucessfully uploaded."
+
+                    ' Dim claimId As String = DecryptQueryString(Request.QueryString("phyid"))
+                    ' Dim sClaimId As String = EncryptQueryString(claimId)
+                    '   Response.Redirect("claimDetail.aspx?phyid=" + sClaimId + "")
+
+                Catch ex As Exception
+
+                End Try
+                ' End If
+            End If
+
+        Next
+        loadAssociatedFiles(claimID)
+
+
+    End Sub
+
+    'check files exist
+    Public Function CheckFileExists(ByVal FilePath As String) As Boolean
+        Dim fileObj As New IO.FileInfo(FilePath)
+        Return fileObj.Exists
+    End Function
+
+
+    'check file extension
+    Public Function checkFileExtension(ByVal filepath As String) As Boolean
+        Dim fileExtension As String = System.IO.Path.GetExtension(filepath)
+        If fileExtension = ".pdf" Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
 
     Protected Function FilterMarker() As String
         Dim dt As New DataTable
@@ -605,4 +783,27 @@ Public Class claimDetail
 
 
     End Function
+
+    Private Sub gvMergeFile_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles gvMergeFile.RowDeleting
+        If e.RowIndex >= 0 Then
+            Try
+                dt = ViewState("CurrentTable")
+                dt.Rows.RemoveAt(e.RowIndex)
+                gvMergeFile.DataSource = dt
+                gvMergeFile.DataBind()
+            Catch ex As Exception
+
+            End Try
+        Else
+            'Do nothing
+        End If
+    End Sub
+
+
+    'generate invoice
+    Protected Sub btnGenerateInvoice_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+
+
+        Response.Redirect("invoice.aspx?inV=" + claimID.ToString + "")
+    End Sub
 End Class

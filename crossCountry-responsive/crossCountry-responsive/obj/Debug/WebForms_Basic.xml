@@ -1005,6 +1005,69 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.claimDetail._lnkButtonGenerateInv">
+<summary>
+lnkButtonGenerateInv control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lnkButtonCloseSend">
+<summary>
+lnkButtonCloseSend control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lnkButtonSendFiles">
+<summary>
+lnkButtonSendFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lnkButtonCancelClaim">
+<summary>
+lnkButtonCancelClaim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lnkReopenClaim">
+<summary>
+lnkReopenClaim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lnkButtonCloseNoSend">
+<summary>
+lnkButtonCloseNoSend control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._hidTAB">
+<summary>
+hidTAB control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.claimDetail._UpdatePanel1">
 <summary>
 UpdatePanel1 control.
@@ -1158,6 +1221,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.claimDetail._lnkAddNotes">
+<summary>
+lnkAddNotes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.claimDetail._btnAdd">
 <summary>
 btnAdd control.
@@ -1194,6 +1266,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.claimDetail._lnkUpload">
+<summary>
+lnkUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.claimDetail._GVAssociatedFiles">
 <summary>
 GVAssociatedFiles control.
@@ -1203,54 +1284,18 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.claimDetail._lnkAddFiles">
+<summary>
+lnkAddFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.claimDetail._gvMergeFile">
 <summary>
 gvMergeFile control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:crossCountry_responsive.claimDetail._lblMergeError">
-<summary>
-lblMergeError control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:crossCountry_responsive.claimDetail._txtMergeFileName">
-<summary>
-txtMergeFileName control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:crossCountry_responsive.claimDetail._txtMergeFileDescription">
-<summary>
-txtMergeFileDescription control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:crossCountry_responsive.claimDetail._btnMergeFile">
-<summary>
-btnMergeFile control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:crossCountry_responsive.claimDetail._btnFileUpload">
-<summary>
-btnFileUpload control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1296,6 +1341,42 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:crossCountry_responsive.claimDetail._btnUpload">
 <summary>
 btnUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lblMergeError">
+<summary>
+lblMergeError control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._txtMergeFileName">
+<summary>
+txtMergeFileName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._txtMergeFileDescription">
+<summary>
+txtMergeFileDescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.claimDetail._lnkMergeFiles">
+<summary>
+lnkMergeFiles control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -1413,6 +1494,258 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:crossCountry_responsive.companyList._gdFiles">
 <summary>
 gdFiles control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblInvoiceNumber">
+<summary>
+lblInvoiceNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblInvoiceDate">
+<summary>
+lblInvoiceDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblCarrierName">
+<summary>
+lblCarrierName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblInvoiceType">
+<summary>
+lblInvoiceType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblCarrierStreetAddress">
+<summary>
+lblCarrierStreetAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblCarrierCityStateZip">
+<summary>
+lblCarrierCityStateZip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblCarrierPhone">
+<summary>
+lblCarrierPhone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblAttention">
+<summary>
+lblAttention control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._ddlInvoiceType">
+<summary>
+ddlInvoiceType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._btnChange">
+<summary>
+btnChange control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._btnCancel">
+<summary>
+btnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblInsuredName">
+<summary>
+lblInsuredName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblPolicyNumber">
+<summary>
+lblPolicyNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblClaimNumber">
+<summary>
+lblClaimNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblAdjuster">
+<summary>
+lblAdjuster control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblLossDate">
+<summary>
+lblLossDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblLossUnit">
+<summary>
+lblLossUnit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblLossType">
+<summary>
+lblLossType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._UpdtPanelBill">
+<summary>
+UpdtPanelBill control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._txtExpenseType">
+<summary>
+txtExpenseType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._txtDescription">
+<summary>
+txtDescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._txtPrice">
+<summary>
+txtPrice control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._btnAddExpense">
+<summary>
+btnAddExpense control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._gridViewInvoice">
+<summary>
+gridViewInvoice control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblSubTotal">
+<summary>
+lblSubTotal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblTaxFees">
+<summary>
+lblTaxFees control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._lblTotalAmount">
+<summary>
+lblTotalAmount control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.invoice._btnCreatePDF">
+<summary>
+btnCreatePDF control.
 </summary>
 <remarks>
 Auto-generated field.

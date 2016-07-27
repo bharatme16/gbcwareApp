@@ -23,6 +23,69 @@ Partial Public Class claimDetail
     Protected WithEvents lblClaimNumber As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lnkButtonGenerateInv control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkButtonGenerateInv As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
+    '''lnkButtonCloseSend control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkButtonCloseSend As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
+    '''lnkButtonSendFiles control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkButtonSendFiles As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
+    '''lnkButtonCancelClaim control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkButtonCancelClaim As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
+    '''lnkReopenClaim control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkReopenClaim As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
+    '''lnkButtonCloseNoSend control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkButtonCloseNoSend As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
+    '''hidTAB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hidTAB As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
     '''UpdatePanel1 control.
     '''</summary>
     '''<remarks>
@@ -176,6 +239,15 @@ Partial Public Class claimDetail
     Protected WithEvents lblNewNoteMsg As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lnkAddNotes control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkAddNotes As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
     '''btnAdd control.
     '''</summary>
     '''<remarks>
@@ -212,6 +284,15 @@ Partial Public Class claimDetail
     Protected WithEvents UpdatePanel2 As Global.System.Web.UI.UpdatePanel
     
     '''<summary>
+    '''lnkUpload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkUpload As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
     '''GVAssociatedFiles control.
     '''</summary>
     '''<remarks>
@@ -221,6 +302,15 @@ Partial Public Class claimDetail
     Protected WithEvents GVAssociatedFiles As Global.System.Web.UI.WebControls.GridView
     
     '''<summary>
+    '''lnkAddFiles control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkAddFiles As Global.System.Web.UI.WebControls.LinkButton
+    
+    '''<summary>
     '''gvMergeFile control.
     '''</summary>
     '''<remarks>
@@ -228,51 +318,6 @@ Partial Public Class claimDetail
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents gvMergeFile As Global.System.Web.UI.WebControls.GridView
-    
-    '''<summary>
-    '''lblMergeError control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblMergeError As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''txtMergeFileName control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtMergeFileName As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''txtMergeFileDescription control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtMergeFileDescription As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''btnMergeFile control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnMergeFile As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''btnFileUpload control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnFileUpload As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
     '''Label1 control.
@@ -318,4 +363,40 @@ Partial Public Class claimDetail
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnUpload As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''lblMergeError control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblMergeError As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''txtMergeFileName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtMergeFileName As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtMergeFileDescription control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtMergeFileDescription As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''lnkMergeFiles control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkMergeFiles As Global.System.Web.UI.WebControls.LinkButton
 End Class

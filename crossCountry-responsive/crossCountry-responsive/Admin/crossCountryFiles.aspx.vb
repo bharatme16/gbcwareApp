@@ -8,10 +8,10 @@ Public Class crossCountryFiles
         Get
             If IsNothing(ViewState("filepath")) Then
 
-                ViewState("filepath") = Request.QueryString("filepath")
+                ViewState("filepath") = Request.QueryString("file")
 
             End If
-            Return CInt(ViewState("claimID"))
+            Return ViewState("filepath").ToString
         End Get
         Set(value As String)
             ViewState("filepath") = value
