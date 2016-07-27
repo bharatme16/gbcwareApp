@@ -235,6 +235,7 @@
     <Content Include="Admin\adjusterWorkload.aspx" />
     <Content Include="Admin\adminhome.aspx" />
     <Content Include="Admin\assignClaim.aspx" />
+    <Content Include="Admin\billingList.aspx" />
     <Content Include="Admin\claimContactList.aspx" />
     <Content Include="Admin\claimDetail.aspx" />
     <Content Include="Admin\claimMap.aspx" />
@@ -447,6 +448,13 @@
     </Compile>
     <Compile Include="Admin\assignClaim.aspx.vb">
       <DependentUpon>assignClaim.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\billingList.aspx.designer.vb">
+      <DependentUpon>billingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\billingList.aspx.vb">
+      <DependentUpon>billingList.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\claimContactList.aspx.designer.vb">
