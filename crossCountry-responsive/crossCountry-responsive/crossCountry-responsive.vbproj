@@ -243,6 +243,7 @@
     <Content Include="Admin\companyList.aspx" />
     <Content Include="Admin\crossCountryFiles.aspx" />
     <Content Include="Admin\invoice.aspx" />
+    <Content Include="Admin\modifyUser.aspx" />
     <Content Include="Admin\userList.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -504,6 +505,13 @@
     </Compile>
     <Compile Include="Admin\invoice.aspx.vb">
       <DependentUpon>invoice.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\modifyUser.aspx.designer.vb">
+      <DependentUpon>modifyUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modifyUser.aspx.vb">
+      <DependentUpon>modifyUser.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\userList.aspx.designer.vb">

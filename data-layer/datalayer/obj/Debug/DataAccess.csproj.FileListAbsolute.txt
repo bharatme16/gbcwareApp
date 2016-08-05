@@ -11,3 +11,4 @@ C:\GBCware\gbcwareApp\data-layer\datalayer\bin\Debug\IntegrityDataAccess.pdb
 C:\GBCware\gbcwareApp\data-layer\datalayer\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\GBCware\gbcwareApp\data-layer\datalayer\obj\Debug\IntegrityDataAccess.dll
 C:\GBCware\gbcwareApp\data-layer\datalayer\obj\Debug\IntegrityDataAccess.pdb
+C:\gbcware\data-layer\datalayer\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
