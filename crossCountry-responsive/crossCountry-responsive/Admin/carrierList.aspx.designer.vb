@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class companyList
+Partial Public Class carrierList
     
     '''<summary>
     '''gdFiles control.

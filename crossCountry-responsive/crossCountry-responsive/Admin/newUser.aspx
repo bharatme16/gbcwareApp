@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="modifyUser.aspx.vb" Inherits="crossCountry_responsive.modifyUser" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="newUser.aspx.vb" Inherits="crossCountry_responsive.newUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <div class="container">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -9,62 +9,12 @@
 
 <div class="form-group">
 <label class="control-label col-md-3 col-sm-3 col-xs-12">
-Current Role :
+Role :
 </label>
 <div class="col-md-6 col-sm-6 col-xs-12">
-   
-<asp:Label ID="lblCurrentRole" runat="server" CssClass="form-control-noborder pull-left col-md-7 col-xs-12"></asp:Label>
-    
-   <%-- <asp:Button ID="btnChangeRole" runat="server" Text="< >" class="btn btn-default" OnClick="btnChangeRole_Click" data-toggle="collapse" data-target="#demo" UseSubmitBehavior="False" />--%>
-    <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo"><span class="fa fa-retweet"></span></button>
+<asp:DropDownList ID="ddlRollList" runat="server"  class="form-control col-md-7 col-xs-12" required="true"></asp:DropDownList>
 </div>
 </div>
-
-<div id="demo" class="collapse">
-
-<div class="panel panel-default">
-
-<div class="panel-heading">
-<h5>Select Role</h5>
-
-</div>
-
-<div class="panel-body">
-
-<div class="form-group">
-<label class="control-label col-md-3 col-sm-3 col-xs-12">
- Role :
-</label>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<asp:DropDownList ID="ddlSelectRole" runat="server" class="form-control col-md-7 col-xs-12" required="true"></asp:DropDownList></div>
-</div>
-<div class="form-group">
-<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 ">
-<asp:Button ID="btnChange" runat="server" CausesValidation="False" onclick="btnChange_Click" Text="Change"  CssClass="btn btn-default"/>
-<asp:Button ID="btnCancel" runat="server" CausesValidation="False"  Text="Cancel"  CssClass="btn btn-default" />
-
-</div>
-</div>
-
-</div>
-
-
-</div> 
-
-
-</div>
-
-
-<div class="form-group">
-<label class="control-label col-md-3 col-sm-3 col-xs-12">
-Status :
-</label>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<asp:Label ID="lblUserStatus" runat="server" CssClass="form-control-noborder pull-left col-md-7 col-xs-12"></asp:Label>
-
-</div>
-</div>
-
 
 <div class="form-group">
 <label class="control-label col-md-3 col-sm-3 col-xs-12">
@@ -191,17 +141,6 @@ Symbility ID : <span class="required">*</span>
 </div>
 </div>
 
-
-<div class="form-group">
-<label class="control-label col-md-3 col-sm-3 col-xs-12">
-Adjuster Status :
-</label>
-<div class="col-md-6 col-sm-6 col-xs-12">
-<asp:Label ID="lblAdjusterStatus" runat="server" CssClass="form-control-noborder pull-left col-md-7 col-xs-12"></asp:Label>
-</div>
-</div>
-
-
 </div>
 
 
@@ -212,12 +151,8 @@ Adjuster Status :
 <div class="ln_solid"></div>
     <div class="form-group">
         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 ">
-            <asp:Button ID="btnLockUnlockUser" CssClass="btn btn-default" OnClick="btnLockUnlockUser_Click"   runat="server" UseSubmitBehavior="False"></asp:Button>
-             <asp:Button ID="btnSaveuser" CssClass="btn btn-default"  Text="Save User"  runat="server"></asp:Button>
-             <asp:Button ID="btnEnableDisable" CssClass="btn btn-default"  Text="Disable User"  runat="server"></asp:Button>
-             <asp:Button ID="btnDeleteUser" CssClass="btn btn-danger"  Text="Delete"  runat="server"></asp:Button>
-              <asp:Button ID="btnEmailPassword" CssClass="btn btn-default"  Text="Email Password"  runat="server"></asp:Button>
-
+             <asp:Button ID="btnSaveuser" CssClass="btn btn-default" OnClick="btnSaveuser_Click" Text="Save User"  runat="server"></asp:Button>
+            
         </div>
     </div>
          </ContentTemplate>  

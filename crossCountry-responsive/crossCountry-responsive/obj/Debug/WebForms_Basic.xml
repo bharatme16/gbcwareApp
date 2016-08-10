@@ -1518,7 +1518,7 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:crossCountry_responsive.companyList._gdFiles">
+<member name="F:crossCountry_responsive.carrierList._gdFiles">
 <summary>
 gdFiles control.
 </summary>
@@ -1779,6 +1779,474 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:crossCountry_responsive.newUser._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._ddlRollList">
+<summary>
+ddlRollList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtFirstName">
+<summary>
+txtFirstName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtLastName">
+<summary>
+txtLastName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtStreet">
+<summary>
+txtStreet control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtCity">
+<summary>
+txtCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._ddlstate">
+<summary>
+ddlstate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtZipCode">
+<summary>
+txtZipCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtPrimaryTelephone">
+<summary>
+txtPrimaryTelephone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtSecondaryTelephone">
+<summary>
+txtSecondaryTelephone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtEmail">
+<summary>
+txtEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtTitle">
+<summary>
+txtTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._txtSymbilityId">
+<summary>
+txtSymbilityId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newUser._btnSaveuser">
+<summary>
+btnSaveuser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._txtCarrierName">
+<summary>
+txtCarrierName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._txtCarrierStreet">
+<summary>
+txtCarrierStreet control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._txtCity">
+<summary>
+txtCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._ddlState">
+<summary>
+ddlState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._txtZip">
+<summary>
+txtZip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._txtPrimaryPhone">
+<summary>
+txtPrimaryPhone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._txtPrimaryEmail">
+<summary>
+txtPrimaryEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newCarrier._btnSaveContact">
+<summary>
+btnSaveContact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newClaimContact._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newClaimContact._txtFirstName">
+<summary>
+txtFirstName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newClaimContact._txtLastName">
+<summary>
+txtLastName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newClaimContact._txtEmail">
+<summary>
+txtEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newClaimContact._ddlCarrier">
+<summary>
+ddlCarrier control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.newClaimContact._btnSaveContact">
+<summary>
+btnSaveContact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._lblCarrier">
+<summary>
+lblCarrier control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._txtFirstName">
+<summary>
+txtFirstName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._txtLastName">
+<summary>
+txtLastName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._txtEmail">
+<summary>
+txtEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._lblConfirmation">
+<summary>
+lblConfirmation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._btnSaveContact">
+<summary>
+btnSaveContact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._btnDeleteContact">
+<summary>
+btnDeleteContact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._btnYes">
+<summary>
+btnYes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyContact._btnNo">
+<summary>
+btnNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._txtCarrierName">
+<summary>
+txtCarrierName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._txtCarrierStreet">
+<summary>
+txtCarrierStreet control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._txtCity">
+<summary>
+txtCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._ddlState">
+<summary>
+ddlState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._txtZip">
+<summary>
+txtZip control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._txtPrimaryPhone">
+<summary>
+txtPrimaryPhone control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._txtPrimaryEmail">
+<summary>
+txtPrimaryEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._lblConfirmation">
+<summary>
+lblConfirmation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._btnSaveContact">
+<summary>
+btnSaveContact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._btnDeleteContact">
+<summary>
+btnDeleteContact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._btnYes">
+<summary>
+btnYes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.modifyCarrier._btnNo">
+<summary>
+btnNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:crossCountry_responsive.modifyUser._UpdatePanel1">
 <summary>
 UpdatePanel1 control.
@@ -1980,6 +2448,51 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:crossCountry_responsive.modifyUser._btnEmailPassword">
 <summary>
 btnEmailPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.search._txtInsuredName">
+<summary>
+txtInsuredName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.search._txtClaimNumber">
+<summary>
+txtClaimNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.search._txtPolicyNumber">
+<summary>
+txtPolicyNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.search._btnSelect">
+<summary>
+btnSelect control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:crossCountry_responsive.search._gdClaims">
+<summary>
+gdClaims control.
 </summary>
 <remarks>
 Auto-generated field.

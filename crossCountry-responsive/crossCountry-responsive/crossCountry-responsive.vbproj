@@ -240,10 +240,16 @@
     <Content Include="Admin\claimDetail.aspx" />
     <Content Include="Admin\claimMap.aspx" />
     <Content Include="Admin\claimReview.aspx" />
-    <Content Include="Admin\companyList.aspx" />
+    <Content Include="Admin\carrierList.aspx" />
     <Content Include="Admin\crossCountryFiles.aspx" />
     <Content Include="Admin\invoice.aspx" />
+    <Content Include="Admin\newUser.aspx" />
+    <Content Include="Admin\newCarrier.aspx" />
+    <Content Include="Admin\newClaimContact.aspx" />
+    <Content Include="Admin\modifyContact.aspx" />
+    <Content Include="Admin\modifyCarrier.aspx" />
     <Content Include="Admin\modifyUser.aspx" />
+    <Content Include="Admin\search.aspx" />
     <Content Include="Admin\userList.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -456,7 +462,7 @@
     </Compile>
     <Compile Include="Admin\billingList.aspx.vb">
       <DependentUpon>billingList.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\claimContactList.aspx.designer.vb">
       <DependentUpon>claimContactList.aspx</DependentUpon>
@@ -486,11 +492,11 @@
       <DependentUpon>claimReview.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Admin\companyList.aspx.designer.vb">
-      <DependentUpon>companyList.aspx</DependentUpon>
+    <Compile Include="Admin\carrierList.aspx.designer.vb">
+      <DependentUpon>carrierList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\companyList.aspx.vb">
-      <DependentUpon>companyList.aspx</DependentUpon>
+    <Compile Include="Admin\carrierList.aspx.vb">
+      <DependentUpon>carrierList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\crossCountryFiles.aspx.designer.vb">
@@ -505,14 +511,56 @@
     </Compile>
     <Compile Include="Admin\invoice.aspx.vb">
       <DependentUpon>invoice.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\newUser.aspx.designer.vb">
+      <DependentUpon>newUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\newUser.aspx.vb">
+      <DependentUpon>newUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\newCarrier.aspx.designer.vb">
+      <DependentUpon>newCarrier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\newCarrier.aspx.vb">
+      <DependentUpon>newCarrier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\newClaimContact.aspx.designer.vb">
+      <DependentUpon>newClaimContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\newClaimContact.aspx.vb">
+      <DependentUpon>newClaimContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\modifyContact.aspx.designer.vb">
+      <DependentUpon>modifyContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modifyContact.aspx.vb">
+      <DependentUpon>modifyContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\modifyCarrier.aspx.designer.vb">
+      <DependentUpon>modifyCarrier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\modifyCarrier.aspx.vb">
+      <DependentUpon>modifyCarrier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\modifyUser.aspx.designer.vb">
       <DependentUpon>modifyUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\modifyUser.aspx.vb">
       <DependentUpon>modifyUser.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\search.aspx.designer.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\search.aspx.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\userList.aspx.designer.vb">
       <DependentUpon>userList.aspx</DependentUpon>

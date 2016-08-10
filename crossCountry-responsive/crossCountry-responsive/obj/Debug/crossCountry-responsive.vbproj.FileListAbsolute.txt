@@ -218,9 +218,6 @@ C:\gbcware\crossCountry-responsive\crossCountry-responsive\bin\businessLibrary.x
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\crossCountry-responsive.vbprojResolveAssemblyReference.cache
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\crossCountry_responsive.Resources.resources
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\crossCountry-responsive.vbproj.GenerateResource.Cache
-C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\crossCountry-responsive.dll
-C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\WebForms_Basic.xml
-C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\crossCountry-responsive.pdb
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\bin\ApplicationInsights.config
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\bin\roslyn\csc.exe
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -325,3 +322,6 @@ C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\bin\ru\Aja
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\bin\tr-TR\AjaxControlToolkit.resources.dll
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\bin\zh-CHS\AjaxControlToolkit.resources.dll
 C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\crossCountry-responsive.dll
+C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\WebForms_Basic.xml
+C:\GBCware\gbcwareApp\crossCountry-responsive\crossCountry-responsive\obj\Debug\crossCountry-responsive.pdb

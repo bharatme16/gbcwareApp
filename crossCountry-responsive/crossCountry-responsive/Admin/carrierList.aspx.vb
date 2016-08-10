@@ -1,6 +1,6 @@
 ﻿Imports System.Data
 
-Public Class companyList
+Public Class carrierList
     Inherits System.Web.UI.Page
     Dim objacess As New CrossCountryDataAccess.dataAccess
 

@@ -18,7 +18,7 @@
             AutoGenerateColumns="false" AllowSorting="true" OnSorting="sortRecords" EmptyDataText="There are no contacts to display"> 
         <Columns>
             <asp:BoundField DataField="Rep ID" HeaderText="repId" ReadOnly="True" SortExpression="Rep ID" HeaderStyle-CssClass="hidden" ItemStyle-CssClass="hidden" /> 
-            <asp:hyperlinkField DataTextField="Contact Name" HeaderText="Name" DataNavigateUrlFields="Rep ID" DataNavigateUrlFormatString="/Admin/modifyClaimContact.aspx?contactId={0}"  SortExpression="Contact Name" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs"/> 
+            <asp:hyperlinkField DataTextField="Contact Name" HeaderText="Name" DataNavigateUrlFields="Rep ID" DataNavigateUrlFormatString="/Admin/modifyContact.aspx?contactId={0}"  SortExpression="Contact Name" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs"/> 
             <asp:BoundField DataField="Email" HeaderText="Email" ReadOnly="True" SortExpression="Email" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs" />            
             <asp:BoundField DataField="password" HeaderText="Password" ReadOnly="True" SortExpression="password" HeaderStyle-CssClass="visible-lg visible-md visible-sm visible-xs" ItemStyle-CssClass="visible-lg visible-md visible-sm visible-xs"/> 
            
