@@ -232,6 +232,8 @@
     <Content Include="Admin\Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Admin\Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Admin\Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\adjusterOverdueClaims.aspx" />
+    <Content Include="Admin\adjusterClaims.aspx" />
     <Content Include="Admin\adjusterWorkload.aspx" />
     <Content Include="Admin\adminhome.aspx" />
     <Content Include="Admin\assignClaim.aspx" />
@@ -435,6 +437,20 @@
     <Compile Include="Admin\Account\VerifyPhoneNumber.aspx.vb">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adjusterOverdueClaims.aspx.designer.vb">
+      <DependentUpon>adjusterOverdueClaims.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adjusterOverdueClaims.aspx.vb">
+      <DependentUpon>adjusterOverdueClaims.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\adjusterClaims.aspx.designer.vb">
+      <DependentUpon>adjusterClaims.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adjusterClaims.aspx.vb">
+      <DependentUpon>adjusterClaims.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\adjusterWorkload.aspx.designer.vb">
       <DependentUpon>adjusterWorkload.aspx</DependentUpon>
