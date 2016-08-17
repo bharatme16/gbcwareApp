@@ -157,14 +157,11 @@ public bool insertReopenDate(string claimId)
             inParams[0] = new SqlParameter("@claimId", SqlDbType.NVarChar);
             inParams[0].Value = claimId;
 
-
-
             pTransactionSuccessful = true;
 
             try
             {
                 SqlHelper.ExecuteNonQuery(connectionString, CommandType.StoredProcedure, "insertReopenDate", inParams);
-
             }
             catch (SqlException InsertError)
             {
